@@ -211,10 +211,10 @@ const DateOverrideInputDialog = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+  <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{Trigger}</DialogTrigger>
 
-      <DialogContent enableOverflow={true} size="md" className="p-0">
+      <DialogContent enableOverflow={true} size="md" className="absolute mt-2 p-0">
         <DateOverrideForm
           excludedDates={excludedDates}
           {...passThroughProps}
